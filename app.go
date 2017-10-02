@@ -31,5 +31,6 @@ func main() {
 	http.HandleFunc("/hello", hwm.SayHelloWorld)
 	go logging.StatsLog()
 
+	print("asdasd")
 	log.Fatal(grace.Serve(":9000", nil))
 }
